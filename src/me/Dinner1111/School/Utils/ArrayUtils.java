@@ -1,16 +1,11 @@
 package me.Dinner1111.School.Utils;
 
 public class ArrayUtils {
-	public static final boolean compareAgainstList(Object[] indexedArray, Object[] indexerArray) {
-		boolean[] results = new boolean[indexedArray.length];
-		for (int indexed = 0; indexed < indexedArray.length; indexed++)
-			for (int indexer = 0; indexer < indexerArray.length; indexer++)
-				if (!indexedArray[indexed].toString().equals(indexerArray[indexer].toString())) results[indexed] = false;
-				else results[indexed] = true;
-		for (int index = 0; index < results.length; index++)
-			if (results[index]) return false;
-		return true;
-	}
+	/**
+	 * Checks if there are duplicate objects in the same array
+	 * @param array The object array
+	 * @return If there are duplicates
+	 */
 	public static final boolean checkDuplicates(Object[] array) {
 		Object[] arrayCopy = array.clone();
 		for (int arrayIndex = 0; arrayIndex < array.length; arrayIndex++)

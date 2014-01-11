@@ -6,6 +6,12 @@ import me.Dinner1111.School.Teachers.TeacherGenerator;
 import me.Dinner1111.School.Teachers.TeacherStorage;
 
 public class Executor {
+	/**
+	 * Method called when a command is run
+	 * @param command The command run
+	 * @param args The arguments of the command
+	 * @return The information to display 
+	 */
 	public String onCommand(String command, String[] args) {
 		if (command.equalsIgnoreCase("help"))
 			if (args.length == 0) return "Avaliable commands:"

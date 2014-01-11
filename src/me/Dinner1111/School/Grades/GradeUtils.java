@@ -3,6 +3,10 @@ package me.Dinner1111.School.Grades;
 import java.util.Random;
 
 public class GradeUtils {
+	/**
+	 * Generates a random letter grade
+	 * @return A random letter grade
+	 */
 	public static final String randomGrade() {
 		switch (new Random().nextInt(5)) {
 			case 1: return "A";
@@ -13,6 +17,11 @@ public class GradeUtils {
 		}
 		return "F";
 	}
+	/**
+	 * Calculates a GPA from a letter grade
+	 * @param grade The letter grade
+	 * @return The GPA
+	 */
 	public static final double GPAFromGrade(String grade) {
 		double[] range = new double[1];
 		switch (grade) {
@@ -42,6 +51,11 @@ public class GradeUtils {
 			GPA = (new Random().nextInt(100) / 100) + (new Random().nextInt((int) Math.ceil(range[1])));
 		return GPA;
 	}
+	/**
+	 * Gets a letter grade from a GPA
+	 * @param GPA The GPA used to find the letter grade
+	 * @return The letter grade
+	 */
 	public static final String gradeFromGPA(double GPA) {
 		if (GPA > 3.5) return "A";
 		if (GPA > 3 && GPA < 3.49) return "B";
@@ -49,6 +63,11 @@ public class GradeUtils {
 		if (GPA > 1 && GPA < 2.49) return "D";
 		else return "F";
 	}
+	/**
+	 * Calculates the average GPA from an array of letter grades
+	 * @param grades An array of letter grades
+	 * @return The average GPA
+	 */
 	public static final double calculateAverageGPA(double[] grades) {
 		double total = 0;
 		for (double GPA : grades)

@@ -11,6 +11,10 @@ public class ScheduleGenerator {
 		"French", "Spanish", "Japanese", "Civics", "Chemistry",  
 		"Business", "Algebra", "Calculus", "English II", "Physical Education" 
 	};
+	/**
+	 * Generates a random schedule
+	 * @return A random schedule
+	 */
 	public static final String[] generate() {
 		String[] schedule = new String[5];
 		while (true) {
