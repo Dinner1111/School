@@ -47,7 +47,7 @@ namespace School {
             }
             double GPA = (new Random().Next(100) / 100) + (new Random().Next((int) Math.Ceiling(range[1])));
             while (GPA < range[0] || GPA > range[1])
-                GPA = (new Random().Next(100) / 100) + (new Random().Next((int) Math.Ceiling(range[1])) + 1);
+                GPA = (new Random().Next(100) / 100) + (new Random().Next((int) Math.Ceiling(range[1])));
             return GPA;
         }
         /**
