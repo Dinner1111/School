@@ -17,11 +17,11 @@ public class StringUtils {
      */
     public static final String generateName() {
         String[] names = {
-                "Josh", "Chris", "Tim", "Alison", "Jessica", "Alex", "Austin",
-                "Miles", "Andrew", "Anothony", "Kayla", "Kayle", "Brian", "Lucas",
-                "Helen", "Katie", "Eric", "Adam", "Jared", "Elly", "Joan",
-                "Juan", "David", "Carter", "Tess", "Cathrine", "Amanda", "Tony"
-            };
+            "Josh", "Chris", "Tim", "Alison", "Jessica", "Alex", "Austin",
+            "Miles", "Andrew", "Anothony", "Kayla", "Kayle", "Brian", "Lucas",
+            "Helen", "Katie", "Eric", "Adam", "Jared", "Elly", "Joan",
+            "Juan", "David", "Carter", "Tess", "Cathrine", "Amanda", "Tony"
+        };
         return names[new Random().nextInt(names.length)];
     }
 }

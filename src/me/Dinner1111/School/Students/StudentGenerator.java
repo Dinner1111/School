@@ -12,8 +12,10 @@ public class StudentGenerator {
     public static final void generate() {
         int studentNumber = generateStudents(15, 30);
         String studentName = StringUtils.generateName();
-        while (studentNumber > 0)
+        while (studentNumber > 0) {
             StudentStorage.addStudent(studentName, new StudentSetup(studentName));
+            studentNumber--;
+        }
     }
     /**
      * Generates a number of students inside a range

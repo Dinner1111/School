@@ -24,12 +24,12 @@ public class StudentSetup {
      * Gets random grades to assign to the student
      */
     private void generateGrades() {
-        for (int index = 0; index <= 5; index++)
+        for (int index = 0; index < 5; index++)
             this.grades[index] = GradeUtils.randomGrade();
     }
     /**
      * Generates an average GPA based on the student's grades
-     * @param grades The students grades
+     * @param grades The student's grades
      */
     private void generateAverage(String[] grades) {
         double[] GPAs = new double[grades.length];

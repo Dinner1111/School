@@ -23,7 +23,7 @@ public class GradeUtils {
      * @return The GPA
      */
     public static final double GPAFromGrade(String grade) {
-        double[] range = new double[1];
+        double[] range = new double[2];
         switch (grade) {
             case "A": 
                 range[0] = 3.5;
